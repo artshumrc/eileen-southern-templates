@@ -95,7 +95,7 @@ h4, h4 a {
 	letter-spacing: -0.03em;
 	font-size: 35px;
 	line-height: 1.1em;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.3em;
 	color:black;
 	margin-left:-3px;
 }
@@ -105,7 +105,6 @@ h5, h5 a {
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	line-height: 0.5em;
 	padding-bottom: 0.75em;
 	padding: 0.5em 0;
 	color:black;
@@ -126,7 +125,9 @@ p {
 	padding-bottom: 1em;
 }
 
-.small {
+p a{
+	font-weight: 700;
+	color:var(--dark-teal);
 }
 
 .para-intro {
@@ -178,12 +179,15 @@ h1.index-title {
 }
 
 .logo h2{
-	font-size: 2em;
 	color:var(--light-red);
-	text-transform: uppercase;
 	margin-top:0em;
-	padding: 0.26em 0 0 1.5em;
+	padding: 0.1em 0 0 1.5em;
 	position: absolute;
+}
+
+.logo h2 a{
+	font-size: 0.8em;
+
 }
 
 .nav-container{
@@ -229,7 +233,7 @@ nav li ul {
 
 .page-link {
 	font-size: 0.9em;
-    line-height:2em;
+    line-height:2.2em;
     text-transform: capitalize;
     letter-spacing: 0em;
     min-width: 200px;
@@ -451,6 +455,7 @@ main {
 	font-family: 'Prophet',sans-serif;
 	font-weight: 200;
 	letter-spacing: -0.03em;
+	color:black;
 }
 
 
@@ -513,25 +518,93 @@ main {
 	padding: 0 0 0.75em 0;
 }
 
+
 /* interviews / index ---------------------------------------------------------------------------- */
+
 .video-container {
 	margin: 2em 0 0 0;
 }
 
 .vid-info-container{
-
+	padding: 1em 0 3em 0;
 }
 
 .vid-title{
-
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0em;
+	font-size: 25px;
+	padding: 0 0 0.2em 0;
 }
 
 .vid-caption{
-	
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* glossary -------------------------------------------------------------------------------------- */
+
+.glossary-container{
+	margin: 2em 0 ;
+}
+
+.term-container{
+	padding:1em 0;
+}
+
+.term{
+	font-size: 3em;
+	margin: 0.5em 0 0em 0;
+	padding: 0.3em 0 0.1em;
+	border-top: 1px solid black;
+}
+
+.pronunciation, .part-of-speech{
+	font-size: 0.85em;
+	padding: 0.2em 0 0 0;
+}
+
+.pronunciation{
+	color:grey;
+}
+
+.part-of-speech{
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.definition{
+	padding:0.25em 0 .5em;
 }
 
 
 
+/* team -------------------------------------------------------------------------------------- */
+
+.team-container{
+	border-bottom: 1px solid black;
+	margin:2em 0;
+}
+
+.team-container div{
+	padding-bottom:2.5em;
+}
+
+.title{
+	color:var(--dark-teal);
+	line-height: 1.3em;
+}
+
+.container-wide .team-container:nth-child(2n+2) {
+	flex-direction: row-reverse;
+	padding-right:1em;
+}
+
+.team-image-container img {
+	width: 80%;
+	border-radius: 50%;
+	box-shadow: 12px 7px 0px var(--dark-red);
+}
 
 
 
@@ -552,7 +625,7 @@ main {
   --dark-yellow: #FFC248;
   --light-yellow: #FFD16F;
   --orange: #F69B5B;
-  --dark-teal:#00898C;
+  --dark-teal:#129696;
   --light-teal: #89BCC3;
 }
 
@@ -750,7 +823,6 @@ nav .menu {
   	background-position: top; /* Center the image */
   	background-repeat: no-repeat; /* Do not repeat the image */
   	background-size: cover; /* Resize the background image to cover the entire container */
-
 }
 
 .category-name, .page-link  {
