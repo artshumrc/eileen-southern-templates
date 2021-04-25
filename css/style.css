@@ -142,8 +142,8 @@ p a{
 	font-family: 'Prophet',sans-serif;
 	font-weight: 200;
 	letter-spacing: -0em;
-	font-size: 50px;
-	line-height: 1.1em;
+	font-size: 45px;
+	line-height: 1.3em;
 	color:white;
 }
 
@@ -166,8 +166,8 @@ h1.page-title {
 }
 
 h1.index-title {
-	padding: 2.3em 0 0 0;
-	font-size: 80px;
+	padding: 2.6em 0 0 0;
+	font-size: 55px;
 	line-height: 1em;
 }
 
@@ -589,11 +589,11 @@ main {
 
 .team-container{
 	border-bottom: 1px solid black;
-	margin:2em 0;
+	margin:4em 0;
 }
 
-.team-container div{
-	padding-bottom:2.5em;
+.team-container .individual-container{
+	padding-bottom:2em;
 }
 
 .title{
@@ -601,16 +601,7 @@ main {
 	line-height: 1.3em;
 }
 
-.container-wide .team-container:nth-child(2n+2) {
-	flex-direction: row-reverse;
-	padding-right:1em;
-}
 
-.team-image-container img {
-	width: 80%;
-	border-radius: 50%;
-	box-shadow: 12px 7px 0px var(--dark-red);
-}
 
 /* publications ---------------------------------------------------------------------------------- */
 
@@ -657,6 +648,11 @@ main {
 	border-right: 1px solid black;
 }
 
+.title-case{
+	text-transform: capitalize;
+	letter-spacing: 0;
+}
+
 /* Color Variables-------------------------------------------------------------------------------- */
 :root {
   --dark-red: #F94B43;
@@ -674,6 +670,10 @@ main {
 
 .light-red {
 	color:var(--light-red);
+}
+
+.dark-red {
+	color:var(--dark-red);
 }
 
 .light-teal {
@@ -947,14 +947,17 @@ h1.page-title {
 }
 
 h1.index-title {
-	padding: 3.5em 0 0 0;
-	font-size: 45px;
+	padding: 5em 0 0 0;
+	font-size: 28px;
+	line-height: 1.2em;
 }
 
 .large-quote{
 	padding-top: 0.7em ;
-	font-size: 30px;
-	line-height: 1.2em;
+	font-size: 25px;
+	line-height: 1.4em;
+	padding-right:1em; 
+	padding-left:1em;
 }
 
 main {
