@@ -160,6 +160,7 @@ header {
 
 }
 
+
 h1.page-title {
 	padding: 1.3em 0 0 0;
 	color:white;
@@ -187,7 +188,14 @@ h1.index-title {
 
 .logo h2 a{
 	font-size: 0.8em;
+}
 
+.logo h3{
+	font-size: 12px;
+	line-height: 13px;
+	position: absolute;
+	top:11px;
+	left:280px;
 }
 
 .nav-container{
@@ -785,8 +793,11 @@ a:hover {
 	width: 100%;
 }
 
-.logo h2 a{
-	font-size:0.8em;
+
+
+.logo h3{
+	top:17px;
+	left:265px;
 }		
 
 nav {
