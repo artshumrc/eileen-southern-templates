@@ -190,7 +190,7 @@ h1.index-title {
 	font-size: 0.8em;
 }
 
-.logo h3{
+.logo h3 a{
 	font-size: 12px;
 	line-height: 13px;
 	position: absolute;
@@ -795,7 +795,7 @@ a:hover {
 
 
 
-.logo h3{
+.logo h3 a{
 	top:17px;
 	left:265px;
 }		
